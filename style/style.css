@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    background-color: hsl(0, 0%, 8%);
+    background-color: var(--OffBlack)
 
 }
 ol, ul {
@@ -49,7 +49,7 @@ table {
 	border-spacing: 0;
 }
 
-root {
+:root {
     /* ### Primary */
 
 --Green: hsl(75, 94%, 57%);
@@ -60,16 +60,57 @@ root {
 --Grey: hsl(0, 0%, 20%);
 --DarkGrey: hsl(0, 0%, 12%);
 --OffBlack: hsl(0, 0%, 8%);
+
 }
 .card {
-    margin: 4rem auto 0 auto;
-    background-color: hsl(0, 0%, 20%);;
-    width: 20rem;
-    height: 40rem;
+    padding: 1.5rem;
+    margin: 4rem auto 2rem auto;
+    background-color: var(--DarkGrey);
+    width: 18rem;
+    height: 32rem;
     border-radius: 0.5rem;
+
 }
 img {
-    margin: 1.6rem 0 2rem 7.5rem;
+    margin: 0 auto 1.5rem auto;
     border-radius: 50%;
     width: 5.5rem;
+    display: block;
 }
+.button-box .btn button{
+    width: 100%; 
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+    background-color: var(--Grey);
+    color: var(--White);
+    box-shadow: none;
+    cursor: pointer;
+}
+.text {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+h1 {
+color: var(--White);
+margin-bottom: 0.8rem;
+font-size: 1.5rem;
+font-family: "Inter";
+font-weight: 600;
+}
+h2 {
+    font-size: 0.8rem;
+    font-family: "Inter";
+    margin-bottom: 1.4rem;
+    color: var(--Green);
+    font-weight: 400;
+
+}
+h3 {
+color: var(--White);
+font-weight: 100;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
